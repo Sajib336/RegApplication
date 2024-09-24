@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="15dp"
+    app:cardMaxElevation="15dp"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:backgroundTint="#8BA8D1"
+
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/usernametxt"
+            android:layout_marginEnd="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toStartOf="@+id/editbtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/useremailtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/usernametxt"
+            app:layout_constraintStart_toStartOf="@+id/usernametxt"
+            app:layout_constraintTop_toBottomOf="@+id/usernametxt" />
+
+        <TextView
+            android:id="@+id/userdobtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Date Of Birth:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/useremailtxt"
+            app:layout_constraintStart_toStartOf="@+id/useremailtxt"
+            app:layout_constraintTop_toBottomOf="@+id/useremailtxt" />
+        <TextView
+            android:id="@+id/userdistrictxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Distric:"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/userdobtxt"
+            app:layout_constraintStart_toStartOf="@+id/userdobtxt"
+            app:layout_constraintTop_toBottomOf="@+id/userdobtxt" />
+
+        <TextView
+            android:id="@+id/usermobiletxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mobile:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/userdistrictxt"
+            app:layout_constraintStart_toStartOf="@+id/userdistrictxt"
+            app:layout_constraintTop_toBottomOf="@+id/userdistrictxt" />
+
+        <ImageButton
+            android:id="@+id/editbtn"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toTopOf="@+id/userdobtxt"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="@+id/usernametxt"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/deletebtn"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#00FFFFFF"
+
+            android:src="@drawable/delete"
+            app:layout_constraintBottom_toTopOf="@+id/usermobiletxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userdobtxt" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
